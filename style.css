@@ -1,0 +1,194 @@
+html,
+body {
+  margin: 0;
+  background-color: #e9cba7;
+}
+
+.navbar img{
+  width: 50px;
+}
+
+.navbar, .container-fluid{
+  background-color: #000000;
+}
+
+#carouselExampleSlidesOnly{
+  transition: transform 1s ease, opacity .5s ease-out;
+}
+
+#uzumaki{
+  color: #e9cba7;
+}
+
+#uzumaki:hover{
+  color: #98694F;
+}
+
+#navbarNavAltMarkup a {
+  color: #e9cba7;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+
+#navbarNavAltMarkup a:hover{
+  color: #98694F;
+}
+
+#main{
+  background-color: #3b2621;
+}
+
+.cup{
+  text-align: center;
+  background-color: transparent;
+}
+
+#main-text{
+  text-align: center;
+  color: #98694F;
+  margin: auto 0;
+}
+
+#main-text p{
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+#main-text h1{
+  font-size: 60px;
+}
+
+#mockup{
+  width: 70%;
+  height: 90%;
+}
+
+.bar{
+  background-color: #e9cba7;
+  text-align: center;
+}
+
+.bar p{
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.bar img{
+  height: 200px;
+  margin: 30px 0;
+  
+}
+
+.bar > .row > .col-md-4{
+  padding: 10px;
+}
+
+.cards{
+  background-color: #e9cba7;
+  font-weight: bold;
+  text-align: left;
+}
+
+.offers{
+  margin: 0 auto;
+  padding: 1rem;
+  
+}
+
+.offers > .row{
+  margin: 0 auto;
+  color: #3b2621;
+  text-align: -webkit-center;
+}
+
+#offer-title{
+  text-align: center;
+  color: #e9cba7;
+  margin: 0;
+  font-weight: bold;
+}
+
+#offer-title > h2{
+  margin: 0;
+}
+
+#offers > .row > .col-md-4{
+  padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom-width: 10px;
+    margin-bottom: 10px;
+}
+
+.offers img {
+  width: 100%
+}
+
+.footer{
+  color: #e9cba7;
+  padding: 0px;
+  margin: 0;
+  height: 10%;
+  text-align: center;
+}
+
+.footer > .row > .col-md-4{
+  padding: 10px;
+}
+
+.footer > .row > .col-md-4 > h3{
+  margin: 20px;
+}
+
+.footer > .row > .col-md-4 > p{
+  margin: 10px;
+}
+
+.footer > .row > .col-lg-12 > p{
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 44em) {
+  nav[role="full-horizontal"] ul > li {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .offers img {
+    width: 100%;
+    height: 100%;
+  }
+} 
+
+.backToTop {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #66462F;
+  color:#e9cba7;
+  text-decoration: none;
+  display: none;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+.backToTop:hover{
+  color: #3b2621;
+  background-color: #e9cba7;
+}
+
+.backToTop span{
+  vertical-align: -webkit-baseline-middle;
+}
