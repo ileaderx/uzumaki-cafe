@@ -2,10 +2,13 @@ html,
 body {
   margin: 0;
   background-color: #e9cba7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar img{
   width: 50px;
+  margin: 5px;
+  padding: 0;
 }
 
 .navbar, .container-fluid{
@@ -18,6 +21,8 @@ body {
 
 #uzumaki{
   color: #e9cba7;
+  margin: 0;
+  padding: 5px;
 }
 
 #uzumaki:hover{
@@ -45,26 +50,34 @@ body {
   background-color: transparent;
 }
 
+.cup > .row > .col-md-6{
+  padding: 10px;
+}
+
 #main-text{
   text-align: center;
   color: #98694F;
   margin: auto 0;
+  padding: 10px;
 }
 
 #main-text p{
   font-weight: bold;
   font-size: 25px;
   letter-spacing: 5px;
-  margin: 0;
+  margin: 5px;
 }
 
 #main-text h1{
   font-size: 60px;
+  margin: 5px;
 }
 
 #mockup{
   width: 70%;
   height: 90%;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 .bar{
@@ -98,13 +111,16 @@ body {
 .offers{
   margin: 0 auto;
   padding: 1rem;
-  
 }
 
-.offers > .row{
+.offer-card-link{
   margin: 0 auto;
   color: #3b2621;
   text-align: -webkit-center;
+  text-decoration: none;
+}
+.offer-card-link:hover{
+  color: #98694fe7;
 }
 
 #offer-title{
@@ -112,6 +128,7 @@ body {
   color: #e9cba7;
   margin: 0;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 
 #offer-title > h2{
@@ -119,15 +136,27 @@ body {
 }
 
 #offers > .row > .col-md-4{
-  padding-top: 10px;
+    padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
     border-bottom-width: 10px;
     margin-bottom: 10px;
 }
 
-.offers img {
-  width: 100%
+.offers-link{
+  text-decoration: none;
+  color: #e9cba7;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.offers-link:hover{
+  text-decoration: none;
+  color: #98694fe7;
+}
+
+.about-text{
+  color:#3b2621;
 }
 
 .footer{
@@ -150,29 +179,17 @@ body {
   margin: 10px;
 }
 
-.footer > .row > .col-lg-12 > p{
+.footer > .row > .col-xl-12 > p{
   margin: 0;
   letter-spacing: 1px;
+  padding: 10px;
 }
 
-@media screen and (max-width: 44em) {
-  nav[role="full-horizontal"] ul > li {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 700px){
-  .offers img {
-    width: 100%;
-    height: 100%;
-  }
-} 
 
 .backToTop {
   width: 50px;
   height: 50px;
   overflow: hidden;
-  white-space: nowrap;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -181,14 +198,92 @@ body {
   text-decoration: none;
   display: none;
   border-radius: 3px;
+  border: 0;
   text-align: center;
-  font-weight: bold;
+  font-size: 18px;
+  padding: .6rem;
 }
 .backToTop:hover{
   color: #3b2621;
   background-color: #e9cba7;
 }
 
-.backToTop span{
-  vertical-align: -webkit-baseline-middle;
-}
+@media screen and (min-width: 768px){
+  .offers img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-text h1{
+    font-size: 50px;
+  }
+  p{
+    font-size: 15px;
+  }
+  
+  @media screen and (min-width: 1200px){
+    #main-text h1{
+      font-size: 80px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 2000px){
+    #main-text h1{
+      font-size: 120px;
+    }
+    #main-text p{
+      font-size: 50px;
+    }
+    .bar p{
+      font-size: 40px;
+    }
+    p{
+      font-size: 40px;
+    }
+    #navbarNavAltMarkup a {
+      color: #e9cba7;
+      font-weight: bold;
+      font-size: 30px;
+      letter-spacing: 1px;
+      margin: 0 10px;
+    }
+    #uzumaki{
+      font-size: 40px;
+      
+    }
+    .navbar img{
+      width: 70px;
+
+    }
+  }
+  @media screen and (min-width: 4000px){
+    #main-text h1{
+      font-size: 150px;
+    }
+    #main-text p{
+      font-size: 65px;
+    }
+    .bar p{
+      font-size: 55px;
+    }
+    p{
+      font-size: 40px;
+    }
+    #navbarNavAltMarkup a {
+      color: #e9cba7;
+      font-weight: bold;
+      font-size: 40px;
+      letter-spacing: 1px;
+      margin: 0 10px;
+    }
+    #uzumaki{
+      font-size: 40px;
+    }
+    .navbar img{
+      width: 80px;
+    }
+  }
+} 
+
