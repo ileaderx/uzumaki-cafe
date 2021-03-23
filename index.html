@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe</title>
+    <meta name="description" content="Uzumaki Coffee Shop Website" author="Ward Alborom">
+    <title>Uzumaki | Coffee Shop Website</title>
     <link rel="icon" href="img/coffee-shop.svg" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -27,10 +28,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
           <a id="uzumaki" class="navbar-brand" href="index.html"
-            ><img src="img/coffee-shop.svg" alt="" />Uzumaki</a
+            ><img src="img/coffee-shop.svg" alt="Logo" class="d-inline-block align-middle" />Uzumaki</a
           >
           <button
             class="navbar-toggler"
@@ -48,7 +49,7 @@
               <a class="nav-link active" aria-current="page" href="menu.html"
                 >Menu</a
               >
-              <a class="nav-link" href="shop.html">Shop</a>
+              <a class="nav-link" href="offers.html">Special Offers</a>
               <a class="nav-link" href="about.html">About</a>
               <a class="nav-link" href="contact.html">Contact</a>
             </div>
@@ -71,15 +72,16 @@
               id="div-img"
               src="img/Coffee-black.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="First Carousel image"
             />
+          
           </div>
           <div class="carousel-item">
             <img
               id="div-img"
               src="img/roaster.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Second Carousel image"
             />
           </div>
           <div class="carousel-item">
@@ -87,7 +89,7 @@
               id="div-img"
               src="img/pouring.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Third Carousel image"
             />
           </div>
         </div>
@@ -96,7 +98,7 @@
       <div class="cup container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <img id="mockup" src="img/Gravity coffee cup mockup.png" alt="" />
+            <img id="mockup" src="img/Gravity coffee cup mockup.png" alt="Coffee cup" />
           </div>
           <div id="main-text" class="col-md-6">
             <h1>Uzumaki Cafe</h1>
@@ -108,30 +110,32 @@
       <div class="bar container-fluid">
         <div class="row">
           <div class="col-md-4">
-            <img src="img/coffee-leaf.png" alt="" />
+            <img src="img/coffee-leaf.png" alt="Divider coffee leaf image" />
             <p>Fresh</p>
           </div>
           <div class="col-md-4">
-            <img src="img/coffee-maker.png" alt="" />
+            <img src="img/coffee-maker.png" alt="Divider coffee maker image" />
             <p>Tasty</p>
           </div>
           <div class="col-md-4">
-            <img src="img/cup.png" alt="" />
+            <img src="img/cup.png" alt="Divider coffee cup image" />
             <p>Decafe</p>
           </div>
         </div>
       </div>
 
-      <div id="offers" class="offers conatiner-fluid">
+      <div id="offers" class="offers conatiner-fluid text-center">
         <div class="row">
           <div id="offer-title" class="col-lg-12">
-            <h2>Offers</h2>
+            <h2 class="m-1">Weekly Offers</h2>
+            <p class="m-1">Check our offers regularly</p>
           </div>
           <div class="col-md-4">
+            <a class="offer-card-link" href="shop.html">
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="/img/Coffee Mug Mockup.jpg" alt="..." />
+                  <img class="rounded img-fluid" src="img/Coffee Mug Mockup.jpg" alt="A person pouring coffee in a mug" />
                 </div>
                 <div class="cards col-md-8">
                   <div class="card-body">
@@ -144,30 +148,14 @@
                 </div>
               </div>
             </div>
+          </a>
           </div>
           <div class="col-md-4">
+            <a class="offer-card-link" href="shop.html">
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="/img/Coffee-Cup-Mockup.jpg" alt="..." />
-                </div>
-                <div class="cards col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Vanilia Mocha</h5>
-                    <p class="card-text">Special vanilia mocha</p>
-                    <p class="card-text">
-                      <small class="text-muted">$12.50</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="/img/Cup-Mockup-with-Hand.jpg" alt="..." />
+                  <img class="rounded img-fluid" src="img/Coffee-Cup-Mockup.jpg" alt="Girl holding a coffee cup" />
                 </div>
                 <div class="cards col-md-8">
                   <div class="card-body">
@@ -180,15 +168,39 @@
                 </div>
               </div>
             </div>
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a class="offer-card-link" href="shop.html">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img class="rounded img-fluid" src="img/Cup-Mockup-with-Hand.jpg" alt="Coffee cup in front of cafe" />
+                </div>
+                <div class="cards col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">French Late</h5>
+                    <p class="card-text">French style late coffee</p>
+                    <p class="card-text">
+                      <small class="text-muted">$9.95</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-12">
+            <a class="offers-link" href="offers.html">See all offers></a>
           </div>
         </div>
       </div>
 
       <div class="bar container-fluid">
         <div class="row">
-          <div class="col-md-4"><img src="/img/leaf.png" alt="" /></div>
-          <div class="col-md-4"><img src="/img/chemex.png" alt="" /></div>
-          <div class="col-md-4"><img src="/img/coffee-leaf.png" alt="" /></div>
+          <div class="col-md-4"><img src="img/leaf.png" alt="Coffee leaf" /></div>
+          <div class="col-md-4"><img src="img/chemex.png" alt="Chemex" /></div>
+          <div class="col-md-4"><img src="img/coffee-leaf.png" alt="Coffee leaf and beans" /></div>
         </div>
       </div>
 
@@ -219,12 +231,12 @@
             <p>Twitter: @example</p>
             <p>Facebook: @example</p>
           </div>
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <p>&copy;Made with &#128151; By Ward Alborom</p>
           </div>
         </div>
       </div>
-      <a href="#" class="backToTop"><span>Top</span></a>
+      <button href="#" class="backToTop">Top</button>
     </footer>
   </body>
 </html>
