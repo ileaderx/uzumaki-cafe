@@ -123,6 +123,7 @@ body {
   color: #98694fe7;
 }
 
+
 #offer-title{
   text-align: center;
   color: #e9cba7;
@@ -141,6 +142,18 @@ body {
     margin-top: 10px;
     border-bottom-width: 10px;
     margin-bottom: 10px;
+}
+
+.card-body{
+  text-decoration: none;
+  color: #3b2621;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.card-body:hover{
+  text-decoration: none;
+  color: #98694fe7;
 }
 
 .offers-link{
@@ -286,3 +299,4 @@ body {
     }
   }
 } 
+
